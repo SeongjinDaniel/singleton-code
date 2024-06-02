@@ -1,5 +1,8 @@
 package com.singleton.singlton1;
 
+/**
+ * 락이 걸려서 성능 저하가 발생한다.
+ */
 public class YunhaSyncronize {
 
     private static String yunha = "오르트구름";
