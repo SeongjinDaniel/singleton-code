@@ -8,12 +8,12 @@ package com.singleton.singlton1;
  *
  * 이 방법은 가장 많이 사용되는 방법 중 하나입니다.
  */
-public class SingletonInstanceHolder {
+public class SingletonInstanceHolder04 {
 
     private static class singletonInstanceHolder {
-        private static final SingletonInstanceHolder INSTANCE = new SingletonInstanceHolder();
+        private static final SingletonInstanceHolder04 INSTANCE = new SingletonInstanceHolder04();
     }
-    public static SingletonInstanceHolder getInstance() {
+    public static SingletonInstanceHolder04 getInstance() {
         return singletonInstanceHolder.INSTANCE;
     }
 }
