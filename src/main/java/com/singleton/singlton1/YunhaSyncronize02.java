@@ -3,12 +3,12 @@ package com.singleton.singlton1;
 /**
  * 락이 걸려서 성능 저하가 발생한다.
  */
-public class YunhaSyncronize {
+public class YunhaSyncronize02 {
 
     private static String yunha = "오르트구름";
 
     public static void main(String[] args) {
-        YunhaSyncronize a = new YunhaSyncronize();
+        YunhaSyncronize02 a = new YunhaSyncronize02();
         new Thread(() -> {
             for (int i = 0; i < 10; i++) {
                 a.say("사건의 지평선");

@@ -3,15 +3,15 @@ package com.singleton.singlton1;
 /**
  * 멀티스레드 환경에서 인스턴스가 여러개 생길수 있음
  */
-public class Singleton {
-    private static Singleton instance;
+public class Singleton01 {
+    private static Singleton01 instance;
 
-    private Singleton() {
+    private Singleton01() {
     }
 
-    public static Singleton getInstance() {
+    public static Singleton01 getInstance() {
         if (instance == null) {
-            instance = new Singleton();
+            instance = new Singleton01();
         }
         return instance;
     }

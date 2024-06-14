@@ -1,11 +1,11 @@
 package com.singleton.singlton1;
 
-public class YunhaSync {
+public class YunhaSync02 {
 
     private static String yunha = "오르트구름";
 
     public static void main(String[] args) {
-        YunhaSync a = new YunhaSync();
+        YunhaSync02 a = new YunhaSync02();
         new Thread(() -> {
             for (int i = 0; i < 10; i++) {
                 a.say("사건의 지평선");
